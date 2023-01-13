@@ -1,10 +1,3 @@
-#
-# @author Philip Wenderby
-# @email philip.wenderby@solera.com
-# @create date 2021-10-27 12:49:34
-# @modify date 2022-02-22 16:57:21
-#
-
 param($vcenters, $username, $password)
 
 $vcenters = $vcenters.Split(',')
