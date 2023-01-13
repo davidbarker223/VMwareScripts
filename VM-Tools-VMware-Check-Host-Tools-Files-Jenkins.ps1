@@ -1,10 +1,3 @@
-#
-# @author Philip Wenderby
-# @email philip.wenderby@solera.com
-# @create date 2021-10-27 12:49:34
-# @modify date 2022-11-22 16:00:40
-#
-
 param($vcenters, $username, $password, $email)
 
 $Date=(Get-Date -Format yyyy-MM-dd_HH-mm)
@@ -43,5 +36,5 @@ foreach ($VCSServer in $VCSServers) {
 Stop-Transcript
 
 if ($null -ne $email){
-    Send-MailMessage -To $email -From "No-Reply-Jenkins@solera.com" -Subject "VMware-Check-Host-Tools-Files-Report-$Date" -Attachments "$ReportExport\VMware-Check-Host-Tools-Files-Report-$Date.txt" -SmtpServer 'mail.axadmin.net' -Port 25 -WarningAction Ignore
+    Send-MailMessage -To $email -From "" -Subject "VMware-Check-Host-Tools-Files-Report-$Date" -Attachments "$ReportExport\VMware-Check-Host-Tools-Files-Report-$Date.txt" -SmtpServer 'mail.axadmin.net' -Port 25 -WarningAction Ignore
 }
