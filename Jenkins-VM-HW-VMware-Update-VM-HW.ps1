@@ -93,5 +93,5 @@ foreach ($VCSServer in $VCSServers) {
 Stop-Transcript
 
 if ($null -ne $email){
-    Send-MailMessage -To $email -From "No-Reply-Jenkins@solera.com" -Subject "VMware-Update-VM-HW-Report-$Date" -Attachments "$ReportExport\VMware-Update-VM-HW-Report-$Date.txt" -SmtpServer '' -Port 25 -WarningAction Ignore
+    Send-MailMessage -To $email -From "" -Subject "VMware-Update-VM-HW-Report-$Date" -Attachments "$ReportExport\VMware-Update-VM-HW-Report-$Date.txt" -SmtpServer '' -Port 25 -WarningAction Ignore
 }
