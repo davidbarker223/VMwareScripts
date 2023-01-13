@@ -1,10 +1,3 @@
-#
-# @author Philip Wenderby
-# @email philip.wenderby@solera.com
-# @create date 2021-10-27 12:49:34
-# @modify date 2022-11-16 16:13:54
-#
-
 param($vcenters, $username, $password, $file, $VM_NIC_Connect_at_Power_On, $VM_NIC_Connected)
 
 #Change version -like number to match installed version, must be higher than version 12
